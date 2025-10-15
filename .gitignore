@@ -1,0 +1,128 @@
+# -------------------------
+# Core Spack environment files
+# -------------------------
+# Local Spack installation
+.spack/
+# Build and install directories (large, auto-generated)
+opt/
+var/
+stage/
+.cache/
+build/
+build*/         # build directories per package
+spack-*/        # temporary build dirs
+
+# Per-cluster environment instances
+envs/*/.env/
+envs/*/view/
+envs/*/.spack-env/
+envs/*/.spack-db/
+envs/*/.lock
+envs/*/.spack/
+envs/*/.spack-config/
+
+# Binary cache artifacts
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.tbz2
+*.tgz
+*.zip
+*.sif
+*.simg
+*.squashfs
+
+# -------------------------
+# Python / Conda / Mamba artifacts
+# -------------------------
+# Mamba/Conda local installs
+mambaforge/
+miniconda*/
+miniforge*/
+envs/mamba*/
+.env/
+.conda/
+.conda_envs/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+*.egg
+*.log
+
+# -------------------------
+# Editor and OS clutter
+# -------------------------
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.bak
+*.tmp
+*~
+.vscode/
+.idea/
+*.code-workspace
+
+# -------------------------
+# HPC / job output
+# -------------------------
+slurm-*.out
+slurm-*.err
+*.o[0-9]*
+*.e[0-9]*
+job_*.out
+job_*.err
+*.log
+
+# -------------------------
+# Generated binaries or data
+# -------------------------
+*.out
+*.exe
+*.bin
+*.a
+*.so
+*.dylib
+*.o
+*.obj
+
+# -------------------------
+# Optional project results
+# -------------------------
+results/
+outputs/
+plots/
+data/
+checkpoints/
+weights/
+*.pt
+*.ckpt
+*.h5
+
+# -------------------------
+# Local configuration overrides
+# -------------------------
+# Allow packages.yaml and compilers.yaml templates,
+# but ignore actual local copies inside .env
+envs/*/compilers.yaml~
+envs/*/packages.yaml~
+local_settings/
+config.local.yaml
+
+# -------------------------
+# Buildcache / mirrors
+# -------------------------
+mirror/
+buildcache/
+*.spack.mirror
+*.key
+
+# -------------------------
+# Logs
+# -------------------------
+logs/
+*.log
+*.err
+*.out
+
