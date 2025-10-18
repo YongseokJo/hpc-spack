@@ -4,11 +4,11 @@ spack:
     unify: when_possible
   specs:
     - cmake@3.28
-    - fftw@3.3.10 +mpi
-    - hdf5@1.14.3 +mpi
+    - hdf5@1.10.2 +mpi
     - openmpi@4.1.6         # satisfied by externals on most clusters
     - cuda@12.2             # satisfied by externals
     - python@3.11
+      #- fftw@3.3.10 +mpi
   packages:
     all:
       variants: +mpi

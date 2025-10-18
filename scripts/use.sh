@@ -5,7 +5,7 @@ ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 CLUSTER="${1:-}"
 if [[ -z "$CLUSTER" ]]; then echo "usage: $0 <cluster>"; exit 1; fi
 
-bash "$ROOT/scripts/bootstrap_spack.sh"
+source "$ROOT/scripts/bootstrap_spack.sh"
 ENV_DIR="$ROOT/envs/$CLUSTER"
 BASE_DIR="$ROOT/envs/base"
 
